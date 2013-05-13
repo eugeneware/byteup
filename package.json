@@ -1,5 +1,5 @@
 {
-  "name": "levelstore",
+  "name": "byteup",
   "version": "0.0.2",
   "description": "Version of levelup that works with maps and binary keys",
   "keywords": [
