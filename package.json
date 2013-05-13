@@ -1,6 +1,6 @@
 {
   "name": "byteup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Version of levelup that works with maps and binary keys",
   "keywords": [
     "leveldb",

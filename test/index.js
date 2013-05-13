@@ -28,7 +28,7 @@ describe('byteup', function () {
     db.close(done);
   });
 
-  it('should be able to do #put and #get', function (done) {
+  it('should be able to do #put and #get and #del', function (done) {
     var key = ['hello', 123];
     var value = { name: 'Eugene' };
 
@@ -38,7 +38,12 @@ describe('byteup', function () {
         if (err) return done(err);
         should.exist(value);
         value.name.should.equal('Eugene');
-        done();
+        db.del(key, function (err) {
+          db.get(key, function (err) {
+            err.name.should.equal('NotFoundError');
+            done();
+          });
+        });
       });
     });
   });
