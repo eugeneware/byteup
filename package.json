@@ -1,10 +1,13 @@
 {
   "name": "byteup",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Add bytewise as a levelup leveldb encoding",
   "keywords": [
     "leveldb",
-    "levelup"
+    "levelup",
+    "bytewise",
+    "binary",
+    "encoding"
   ],
   "author": "Eugene Ware <eugene@noblesamurai.com>",
   "dependencies": {
