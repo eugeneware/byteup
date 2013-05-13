@@ -11,14 +11,14 @@ describe('byteup', function () {
     , dbPath = path.join(__dirname, '..', 'test', 'db');
 
   beforeEach(function (done) {
+    byteup();
     rimraf(dbPath, function (err) {
       if (err) done(err);
       db = levelup(dbPath, {
-        keyEncoding: 'binary',
+        keyEncoding: 'bytewise',
         valueEncoding: 'json'
       }, function (err) {
         if (err) done(err);
-        db = byteup(db);
         done();
       });
     });

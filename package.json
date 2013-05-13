@@ -1,7 +1,7 @@
 {
   "name": "byteup",
-  "version": "0.0.3",
-  "description": "Version of levelup that works with maps and binary keys",
+  "version": "0.0.4",
+  "description": "Add bytewise as a levelup leveldb encoding",
   "keywords": [
     "leveldb",
     "levelup"
