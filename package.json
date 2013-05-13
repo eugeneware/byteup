@@ -25,6 +25,6 @@
   "scripts": {
     "test": "node_modules/.bin/mocha"
   },
-  "repository": "",
+  "repository": "git://github.com/nharbour/byteup.git",
   "license": "BSD"
 }
