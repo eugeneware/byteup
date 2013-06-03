@@ -1,6 +1,6 @@
 {
   "name": "byteup",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Add bytewise as a levelup leveldb encoding",
   "keywords": [
     "leveldb",

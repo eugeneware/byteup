@@ -4,7 +4,8 @@ var should = require('should')
   , levelup = require('levelup')
   , _ = require('underscore')
   , async = require('async')
-  , byteup = require('../lib/byteup');
+  , byteup = require('../lib/byteup')
+  , bytewise = require('bytewise');
 
 describe('byteup', function () {
   var db
@@ -26,6 +27,11 @@ describe('byteup', function () {
 
   afterEach(function (done) {
     db.close(done);
+  });
+
+  it('should return bytewise', function (done) {
+    byteup().should.equal(bytewise);
+    done();
   });
 
   it('should be able to do #put and #get and #del', function (done) {
