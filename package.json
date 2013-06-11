@@ -1,6 +1,6 @@
 {
   "name": "byteup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add bytewise as a levelup leveldb encoding",
   "keywords": [
     "leveldb",
@@ -27,6 +27,6 @@
   "scripts": {
     "test": "node_modules/.bin/mocha"
   },
-  "repository": "git://github.com/nharbour/byteup.git",
+  "repository": "git://github.com/eugeneware/byteup.git",
   "license": "BSD"
 }
